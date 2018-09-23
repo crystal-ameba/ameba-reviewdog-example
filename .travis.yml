@@ -1,1 +1,9 @@
 language: crystal
+
+install:
+  - shards install
+  - mkdir -p ~/bin/ && export export PATH="~/bin/:$PATH"
+  - curl -fSL https://github.com/haya14busa/reviewdog/releases/download/0.9.10/reviewdog_linux_amd64 -o ~/bin/reviewdog && chmod +x ~/bin/reviewdog
+
+script:
+  - reviewdog -conf=.reviewdog.yml -reporter=github-pr-check

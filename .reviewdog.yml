@@ -1,0 +1,5 @@
+runner:
+  ameba:
+    cmd: bin/ameba -f flycheck
+    errorformat:
+      - "%f:%l:%c: E: %m"
