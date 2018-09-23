@@ -1,0 +1,13 @@
+name: ameba-reviewdog-example
+version: 0.1.0
+
+authors:
+  - Vitalii Elenhaupt <velenhaupt@gmail.com>
+
+targets:
+  ameba-reviewdog-example:
+    main: src/ameba-reviewdog-example.cr
+
+crystal: 0.26.1
+
+license: MIT
